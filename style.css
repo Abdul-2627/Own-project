@@ -11,7 +11,7 @@
 :root{
     --font-style: "Montserrat", serif;
     --primary-p:20px;
-    --secondary-p:14px;
+    --secondary-p:17px;
     --primary-color:rgb(14, 13, 13);
     --secondary-color:rgb(39, 37, 37);
 }
@@ -209,8 +209,6 @@ input[type=text]{
     padding: 0px 5px;
     margin-top: 10px;
 }
-#active{
-}
 .anime-nav ul a{
     margin-right: 90px;
     list-style: none;
@@ -323,6 +321,9 @@ input[type=text]{
 }
 .ep-text h4{
     color: #F3E5AB		;
+}
+.ep-text span{
+    font-size: 13px;
 }
 .wrapper{
     overflow: auto;
