@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@media only screen and (min-width:350px) and (max-width:570px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    :root{
+        --font-style: "Montserrat", serif;
+        --primary-p:16px;
+        --secondary-p:10px;
+        --primary-color:rgb(14, 13, 13);
+        --secondary-color:rgb(39, 37, 37);
+    }
+    .container{
+        width:100%;
+        background-color:#000000;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+    }
+    .primary-p{
+        font-size: var(--primary-p);
+        color: #E2DFD2;
+    }
+    .secondary-p{
+        font-size: var(--secondary-p);
+        color: #FCF5E5	;
+    }
+    /* Nav Section  */
+    .topNav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+        z-index: 1;
+        background-color: #141414;
+    }
+    .topNav a{
+        text-decoration: none;
+    }
+    .logo{
+        margin: 10px 0px;
+        font-size: 20px;
+    }
+    .logo a{
+        color: rgb(247 244 197);
+    
+    }
+    .logo span{
+        color: #0FFCBE;
+    }
+    .navItems{
+        margin: 10px 0px;
+    }
+    .navItems a{
+        font-family: "Montserrat", serif;
+        position: relative;
+        margin: 0px 10px;
+        color: #0FFCBE;
+        font-size: 16px;
+    }
+    .topNav input{
+        padding: 7px 23px;
+        margin-right:10px 0px;
+        border-radius: 26px;
+        outline: none;
+        width: 100%;
+        border: 1px solid #0FFCBE;
+        background-color: transparent;
+    }
+    ::placeholder{
+        color:#0FFCBE;
+        opacity: 0.6;
+    }
+    input[type=text]{
+        color:#FCF5E5;
+        opacity: 1;
+    }
+    
+    .topNav i{
+        position: relative;
+        right: 20%; 
+        color: #0FFCBE;
+        cursor: pointer;
+    }
+    .nav-search{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        height: 50px;
+    }
+    .navItems  a::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        border: 1px solid #0FFCBE;
+        left: 0;
+        bottom: -6px;
+        background-color: #0FFCBE	;
+        transform: scale(0);
+        transform-origin: right;
+        transition: transform .5s;
+    }
+    .navItems a:hover::after{
+        transform-origin:left;
+        transform: scale(1);
+    }
+    /* Home section  */
+.home-container{
+    width: 100%;
+    height: 70vh;
+    padding: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/bg.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.home-box{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-style);
+}
+
+.h-content{
+    width: 100%;
+}
+.h-content span{
+    background-color: #0FFCBE;
+    padding: 1px 7px;
+    font-size: 10px;
+    color: #000000;
+    font-weight: 600;
+}
+.h-content h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 3px 0px;
+    color: #0FFCBE;
+}
+.h-content h2{
+    font-weight: 700;
+    margin: 3px 0px;
+    font-size: 16px;
+    color: white;
+}
+.h-content p{
+    color: #c7c8c8;
+    font-size: 12px;
+    margin: 3px 0px;
+    font-weight: 600;
+    line-height: 1rem;
+}
+.btn{
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.btn button{
+    width: 155px;
+    padding: 8px 6px;
+    margin: 0px 10px;
+    font-size: 10px;
+}
+/* Anime section  */
+.anime-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0px;
+    padding: 0px 10px;
+}
+.anime-nav ul{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    padding: 0px;
+    margin-top: 10px;
+    width: 100%;
+}
+.anime-nav ul a{
+    margin-right: 15px;
+    font-size: 14px;
+    list-style: none;
+    padding-left: 9px;
+    text-decoration: none;
+    color: #0FFCBE;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+.anime-box{
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    justify-content:center;
+    align-items: start;
+}
+.anime-now{
+    width: 100%;
+    margin: 24px 0px;
+    display: flex;
+    overflow:auto;    
+}
+.anime-img img{
+    width: 100px;
+    height: 140px;
+    border-radius: 4px;
+}
+
+.box{
+    width: 200px;
+    padding: 0px 5px;
+}
+.name span{
+    font-size: 11px;
+    color: #bbb69d;
+}
+.name h5{
+    font-size: 12px;
+    color: #F3E5AB	;
+}
+.box .rate i{
+    color:rgb(255, 196, 0);
+    margin: 5px 0px;
+}
+.news-box{
+    display: flex;
+    justify-content: start;
+    align-items: center;    
+    margin: 20px 0px;
+    border-radius: 5px;
+    background-color: #000000;
+    box-shadow:1px 1px 3px #0FFCBE;
+}
+/* Recent section  */
+.recent-box {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    margin-top: 0px;
+}
+
+/* News Section  */
+.news-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;    
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #000000;
+    box-shadow:1px 1px 3px #0FFCBE;
+}
+.n-img img{
+    padding: 3px;
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+}
+.n-text h4{ 
+    font-size: 20px;
+    margin: 10px 0px;
+    color: #0FFCBE;
+}
+.n-text p{
+    color: #FCF5E5;
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    line-height: 1.2rem;
+}
+.n-box{
+    margin: 14px 0px;
+}
+.n-item{
+    margin-right:0px ;
+}
+/* Review Section  */
+
+.review-box{
+    border-radius: 3px;
+    border: 1px solid #0FFCBE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19px;
+    padding: 10px;
+}
+.r-img{
+    width: 100%;
+}
+.r-img img{
+    width:100%;
+    height: 210px;
+}
+.r-item{
+    margin-right: 0px;
+}
+.rate i{
+    color: gold;
+}
+.r-text p{
+    color: #FCF5E5;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 1.1px;
+}
+.r-text span{
+    color: #0FFCBE;
+}
+.r-text{
+    color: #0FFCBE;
+}
+
+ /* Footer Section  */
+
+ .input-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 0px;
+}
+.input-text{
+    margin: 10px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-text h2{
+    font-family: "Montserrat", serif;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 300;
+    color:#F3E5AB;
+
+}
+.input-text p{
+    font-size: 12px;
+    margin: 10px 0px;
+    font-family: "Moncerret", serif;
+    color:#0FFCBE;
+
+}
+.input-text div{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid #0FFCBE;
+    background-color:transparent;
+    cursor: pointer;
+}
+.input-text div:hover{
+    background-color: #0FFCBE;
+    transition: all .3s ease-in;
+}
+.mail-btn{
+    width: 200px;
+}
+.input-text div button{
+    height: 100%;
+    width: 200px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #0FFCBE;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-family: "Teko", serif;
+}
+.input-text div button:hover{
+    color: black;
+}
+.input-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0px;
+}
+.input-item{
+    width: 100%;
+    margin-top: 20px;
+}
+.input-item h3{
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    color:#F3E5AB;
+    font-family:"Montserrat", serif;
+}
+.con-box{
+    width: 100%;
+}
+.c-div{
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    flex-direction: column;
+}
+.c-div input{
+    width: 100%;
+    height: 20px;
+    padding: 18px;
+    border: 1px solid #0FFCBE;
+    margin: 6px 0px;
+    border-radius: 40px;
+    color:rgb(247 244 197) ;
+    background-color: transparent;
+}
+.c-div textarea{    
+    margin: 6px 0px;
+    border-radius: 15px  ;
+    background-color: transparent;
+    border: 1px solid #0FFCBE;
+    padding: 18px;
+    color:rgb(247 244 197) ;
+}
+ .c-div label{
+    font-family: "Montserrat", serif;
+    color:#0FFCBE;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+
+}
+.input-btn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-btn button{
+    padding: 10px 35px;
+    font-size: 17px;
+    border-radius:30px;
+    border: none;
+    background-color:#0FFCBE; 
+    cursor: pointer;
+}
+.input-btn button:hover{
+    background-color: transparent;
+    color: #0FFCBE;
+    border:1px solid #0FFCBE ;
+    transition: border .3s all ease-in;
+}
+
+
+/* Foot Content  */
+.foot-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    /* background-color: red; */
+    height: 70vh;
+    justify-content:start;
+    align-items: start;
+}
+
+.foot-content div h4{
+    color: #0FFCBE;
+    margin: 3px 0px;
+}
+
+div span{
+    color: #F3E5AB;
+}
+.icon-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 10px 0px;
+}
+.icon i{
+    margin-right: 10px;
+    font-size: 20px;
+    padding: 10px;
+    background-color:transparent;
+    cursor: pointer;
+    border-radius:100% ;
+    border: 1px solid #0FFCBE;
+}
+
+}
