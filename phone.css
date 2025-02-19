@@ -175,13 +175,13 @@
     margin-top: 20px;
     height: 50px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 .btn button{
     width: 155px;
     padding: 8px 6px;
-    margin: 0px 10px;
+    margin: 0px 8px;
     font-size: 10px;
 }
 /* Anime section  */
@@ -213,33 +213,42 @@
 .anime-box{
     display: flex;
     width: 100%;
+    height:400px;
     margin: 0px;
     padding: 0px;
+    background-color: chartreuse;
     justify-content:center;
     align-items: start;
 }
 .anime-now{
     width: 100%;
-    margin: 24px 0px;
+    height: 380px;
+    background-color: red;
+    margin:25px 0px;
     display: flex;
     overflow:auto;    
 }
 .anime-img img{
-    width: 190px;
-    height: 180px;
+    width: 170px;
+    height: 200px;
     border-radius: 4px;
 }
 
 .box{
+    padding: 10px 0px;
+    background-color: blue;
     width: 200px;
-    padding: 0px 5px;
+    height: 100%;
+    padding: 3px 5px;
 }
 .name span{
     font-size: 11px;
+    margin: 3px 0px;
     color: #bbb69d;
 }
 .name h5{
     font-size: 12px;
+    margin: 3px 0px;
     color: #F3E5AB	;
 }
 .box .rate i{
@@ -348,7 +357,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0px 0px;
+    padding: 0px 8px;
 }
 .input-text{
     margin: 10px 0px;

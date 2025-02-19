@@ -274,13 +274,15 @@ input[type=text]{
 }
 .a-btn{
     display: flex;
-    justify-content: flex-start;
+    justify-content:center;
+    align-items: center;
 }
 .a-btn li{
-    font-size: 12px;
+    font-size: 13px;
     list-style: none;
     text-align: center;
     color: #fff;
+    height: 45px;
     margin-right: 5px;
     padding: 6px 6px;
     border-radius: 3px;
