@@ -32,10 +32,17 @@
         color: #FCF5E5	;
     }
     /* Nav Section  */
+    .navBar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .topNav{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 0px;
         width: 100%;
@@ -67,11 +74,11 @@
         font-size: 16px;
     }
     .topNav input{
-        padding: 7px 23px;
-        margin-right:10px 0px;
-        border-radius: 26px;
+        padding: 10px 20px;
+        margin-left:15px;
+        border-radius:26px;
         outline: none;
-        width: 100%;
+        width: 300px;
         border: 1px solid #0FFCBE;
         background-color: transparent;
     }
@@ -86,17 +93,18 @@
     
     .topNav i{
         position: relative;
-        right: 20%; 
+        right: 13%; 
         color: #0FFCBE;
         cursor: pointer;
     }
     .nav-search{
         position: relative;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        width: 250px;
+        width: 100%;
         height: 50px;
+        background-color: #FCF5E5;
     }
     .navItems  a::after{
         content: "";
@@ -195,9 +203,8 @@
 }
 .anime-nav ul a{
     margin-right: 15px;
-    font-size: 14px;
+    font-size: 15px;
     list-style: none;
-    padding-left: 9px;
     text-decoration: none;
     color: #0FFCBE;
     font-weight: 600;
@@ -219,7 +226,7 @@
     overflow:auto;    
 }
 .anime-img img{
-    width: 100px;
+    width: 190px;
     height: 140px;
     border-radius: 4px;
 }
@@ -317,6 +324,9 @@
 }
 .rate i{
     color: gold;
+}
+.r-text{
+    margin-top: 10px;
 }
 .r-text p{
     color: #FCF5E5;
@@ -478,7 +488,7 @@
     flex-direction: column;
     margin-top: 0;
     /* background-color: red; */
-    height: 70vh;
+    height: 315px;
     justify-content:start;
     align-items: start;
 }

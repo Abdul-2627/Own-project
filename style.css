@@ -95,7 +95,7 @@ input[type=text]{
 }
 .active{
     border-bottom:2px solid #0FFCBE;
-    border-bottom-width: 2px;
+    border-bottom-width: 2px; 
 }
 .navItems .active:hover::after{
     transform-origin:none;
@@ -441,7 +441,7 @@ input[type=text]{
     font-family: "Montserrat", serif;
     font-size: 50px;
     font-weight: 300;
-    color:#F3E5AB;
+    color: white;
 
 }
 .input-text p{
@@ -497,7 +497,7 @@ input[type=text]{
 .input-item h3{
     font-size: 30px;
     letter-spacing: 1.3px;
-    color:#F3E5AB;
+    color:white;
     font-family:"Montserrat", serif;
 }
 .con-box{
@@ -572,7 +572,8 @@ input[type=text]{
 }
 
 div span{
-    color: #F3E5AB;
+    color: white;
+    letter-spacing: 1.3px;
 }
 .icon-box{
     display: flex;
@@ -640,4 +641,13 @@ div span{
     text-decoration: none;
     color: white;
     margin: 10px 0px;
+}
+
+.copy{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0FFCBE;
 }
