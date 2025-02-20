@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-@media only screen and (min-width:350px) and (max-width:570px){
+@media only screen and (min-width:571px) and (max-width:1170px){
     *{
         padding: 0;
         margin: 0;
@@ -11,7 +11,7 @@
     :root{
         --font-style: "Montserrat", serif;
         --primary-p:16px;
-        --secondary-p:13px;
+        --secondary-p:16px;
         --primary-color:rgb(14, 13, 13);
         --secondary-color:rgb(39, 37, 37);
     }
@@ -53,8 +53,8 @@
         text-decoration: none;
     }
     .logo{
-        margin: 10px 0px;
-        font-size: 20px;
+        margin: 7px 0px;
+        font-size: 25px;
     }
     .logo a{
         color: rgb(247 244 197);
@@ -64,25 +64,27 @@
         color: #0FFCBE;
     }
     .navItems{
-        margin: 10px 0px;
+        margin: 7px 0px;
     }
     .navItems a{
         font-family: "Montserrat", serif;
         position: relative;
-        margin: 0px 10px;
+        margin: 0px 32px;
         color: #0FFCBE;
-        font-size: 16px;
+        font-size: 18px;
     }
     .topNav input{
         padding: 10px 20px;
+        margin: 3px 0px;
         margin-left:15px;
         border-radius:26px;
         outline: none;
-        width: 300px;
+        width: 500px;
         border: 1px solid #0FFCBE;
         background-color: transparent;
     }
     ::placeholder{
+        font-size: 15px;
         color:#0FFCBE;
         opacity: 0.6;
     }
@@ -93,7 +95,8 @@
     
     .topNav i{
         position: relative;
-        right: 13%; 
+        right: 8%;
+        font-size: 20px; 
         color: #0FFCBE;
         cursor: pointer;
     }
@@ -123,9 +126,9 @@
         transform: scale(1);
     }
     /* Home section  */
-.home-container{
+    .home-container{
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     padding: 10px;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/bg.jpg");
     background-position:center;
@@ -133,7 +136,7 @@
     background-size:cover;
 }
 .home-box{
-    width: 100%;
+    width: 98%;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -142,17 +145,17 @@
 }
 
 .h-content{
-    width: 100%;
+    width: 60%;
 }
 .h-content span{
     background-color: #0FFCBE;
     padding: 1px 7px;
-    font-size: 10px;
+    font-size: 12px;
     color: #000000;
     font-weight: 600;
 }
 .h-content h1{
-    font-size: 32px;
+    font-size: 35px;
     font-weight: 700;
     margin: 3px 0px;
     color: #0FFCBE;
@@ -160,29 +163,29 @@
 .h-content h2{
     font-weight: 700;
     margin: 3px 0px;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
 }
 .h-content p{
     color: #c7c8c8;
-    font-size: 12px;
+    font-size: 13px;
     margin: 3px 0px;
     font-weight: 600;
-    line-height: 1rem;
+    line-height: 1.3rem;
 }
 .btn{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .btn button{
-    width: 155px;
+    width: 175px;
     padding: 8px 6px;
     margin: 0px 8px;
-    font-size: 10px;
+    font-size: 12px;
 }
 /* Anime section  */
 .anime-container{
@@ -201,8 +204,8 @@
     width: 100%;
 }
 .anime-nav ul a{
-    margin-right: 15px;
-    font-size: 15px;
+    margin-right: 35px;
+    font-size: 17px;
     list-style: none;
     text-decoration: none;
     color: #0FFCBE;
@@ -213,7 +216,7 @@
 .anime-box{
     display: flex;
     width: 100%;
-    height:400px;
+    height:430px;
     margin: 0px;
     padding: 0px;
     justify-content:center;
@@ -221,14 +224,14 @@
 }
 .anime-now{
     width: 100%;
-    height: 400px;
+    height: 410px;
     margin:16px 0px;
     display: flex;
     overflow:auto;    
 }
 .anime-img img{
-    width: 168px;
-    height: 200px;
+    width: 170px;
+    height: 210px;
     border-radius: 4px;
 }
 
@@ -271,9 +274,12 @@
     margin-top: 0px;
 }
 .ep-text span{
-    font-size: 10px;
+    font-size: 12px;
 }
-/* News Section  */
+.ep-text h4{
+    color: #F3E5AB;
+    font-size: 20px;
+}
 .news-box{
     display: flex;
     flex-direction: column;
@@ -288,19 +294,19 @@
 .n-img img{
     padding: 3px;
     width: 100%;
-    height: 180px;
+    height: 190px;
     border-radius: 5px;
 }
 .n-text h4{ 
-    font-size: 20px;
+    font-size: 22px;
     margin: 10px 0px;
     color: #0FFCBE;
 }
 .n-text p{
     color: #FCF5E5;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.1px;
-    line-height: 1.2rem;
+    line-height: 1.4rem;
 }
 .n-box{
     margin: 14px 0px;
@@ -350,10 +356,7 @@
 .r-text{
     color: #0FFCBE;
 }
-
- /* Footer Section  */
-
- .input-contain{
+.input-contain{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -369,7 +372,7 @@
 }
 .input-text h2{
     font-family: "Montserrat", serif;
-    font-size: 30px;
+    font-size: 34px;
     margin: 0px;
     padding: 0px;
     font-weight: 300;
@@ -377,7 +380,7 @@
 
 }
 .input-text p{
-    font-size: 12px;
+    font-size: 14px;
     margin: 10px 0px;
     font-family: "Moncerret", serif;
     color:#0FFCBE;
@@ -405,7 +408,7 @@
 .input-text div button{
     height: 100%;
     width: 200px;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 700;
     color: #0FFCBE;
     border: none;
@@ -422,30 +425,36 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    padding: 0px;
+    align-items: center;
 }
 .input-item{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 .input-item h3{
-    font-size: 20px;
+    font-size: 23px;
     letter-spacing: 1.1px;
     color:white;
     font-family:"Montserrat", serif;
 }
 .con-box{
     width: 100%;
+    
 }
 .c-div{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 5px;
     flex-direction: column;
 }
 .c-div input{
-    width: 100%;
+    width: 550px;
     height: 20px;
     padding: 18px;
     border: 1px solid #0FFCBE;
@@ -456,6 +465,7 @@
 }
 .c-div textarea{    
     margin: 6px 0px;
+    width: 550px;
     border-radius: 15px  ;
     background-color: transparent;
     border: 1px solid #0FFCBE;
@@ -466,7 +476,10 @@
     font-family: "Montserrat", serif;
     color:#0FFCBE;
     font-size: 14px;
+    width: 520px;
     letter-spacing: 1.5px;
+    text-align: start;
+    /* background-color: blueviolet; */
 
 }
 .input-btn{
@@ -478,7 +491,7 @@
 }
 .input-btn button{
     padding: 10px 35px;
-    font-size: 17px;
+    font-size: 19px;
     border-radius:30px;
     border: none;
     background-color:#0FFCBE; 
@@ -490,17 +503,13 @@
     border:1px solid #0FFCBE ;
     transition: border .3s all ease-in;
 }
-
-
 /* Foot Content  */
 .foot-content{
     display: flex;
-    flex-direction: column;
     margin-top: 0;
     padding-left: 8px;
-    height: 355px;
-    justify-content:start;
-    align-items: start;
+    height: 200px;
+    align-items: flex-start;
 }
 
 .foot-content div h4{
@@ -516,12 +525,12 @@ div span{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin: 10px 0px;
+    margin:0px;
 }
 .icon i{
-    margin-right: 10px;
-    font-size: 20px;
-    padding: 10px;
+    margin-right: 6px;
+    font-size: 16px;
+    padding: 7px;
     background-color:transparent;
     cursor: pointer;
     border-radius:100% ;
