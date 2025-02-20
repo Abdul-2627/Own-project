@@ -194,7 +194,7 @@ input[type=text]{
 .anime-container{
     display: flex;
     flex-wrap: wrap;
-    height: 70vh;
+    height: 75vh;
     margin: 30px 10px;
     padding: 0px 10px;
     font-family: var(--font-style);
@@ -206,7 +206,7 @@ input[type=text]{
     display: flex;
     justify-content:start;
     align-items: center;
-    padding: 0px 5px;
+    padding: 0px 0px;
     margin-top: 10px;
 }
 .anime-nav ul a{
@@ -248,7 +248,7 @@ input[type=text]{
 .anime-now{
     margin: 24px 0px;
     display: flex;
-    height: 100%;
+    height: 520px;
     overflow: auto;    
 }
 .anime-img img{
@@ -258,7 +258,8 @@ input[type=text]{
 }
 .box{
     width: 190px;
-    padding: 0px 5px;
+    padding: 2px 0px;
+    margin-right: 10px;
 }
 .name span{
     font-size: 13px;
@@ -338,13 +339,15 @@ input[type=text]{
 /* News Section  */
 
 .news-container{
-    margin: 20px 10px;
-    padding: 5px 7px;
+    margin: 20px 8px;
+    padding: 5px 10px;
     font-family: var(--font-style);
 }
 .news-nav{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    padding: 0px 0px;
 }
 .news-nav h4{
     color: #0FFCBE;
@@ -353,7 +356,7 @@ input[type=text]{
     color: #0FFCBE;
 }
 .n-box{
-    margin: 0px 10px;
+    margin: 0px 0px;
 }
 .n-item{
     margin-right:20px ;
@@ -363,6 +366,7 @@ input[type=text]{
     justify-content: start;
     align-items: center;    
     margin: 20px 0px;
+    padding: 0px 3px;
     border-radius: 5px;
     background-color: #000000;
     box-shadow:1px 1px 3px #0FFCBE;
