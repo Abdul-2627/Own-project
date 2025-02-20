@@ -227,6 +227,7 @@
     height: 410px;
     margin:16px 0px;
     display: flex;
+    /* align-items: flex-start; */
     overflow:auto;    
 }
 .anime-img img{
@@ -240,7 +241,7 @@
     width: 200px;
     height: 100%;
     padding: 3px 0px;
-    padding-left: 10px;
+    margin-right: 12px;
 }
 .name span{
     font-size: 11px;
