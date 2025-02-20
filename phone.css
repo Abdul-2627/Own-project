@@ -127,6 +127,7 @@
     width: 100%;
     height: 70vh;
     padding: 10px;
+    margin: 0px;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/bg.jpg");
     background-position:center;
     background-repeat:no-repeat;
@@ -143,6 +144,7 @@
 
 .h-content{
     width: 100%;
+    padding: 0px;
 }
 .h-content span{
     background-color: #0FFCBE;
@@ -172,16 +174,17 @@
 }
 .btn{
     width: 100%;
-    margin-top: 20px;
-    height: 50px;
+    margin-top: 0px;
+    height: 70px;
+    margin-left: -5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .btn button{
     width: 155px;
-    padding: 8px 6px;
-    margin: 0px 8px;
+    padding: 8px 0px;
+    margin: 0px 5px;
     font-size: 10px;
 }
 /* Anime section  */
@@ -201,8 +204,8 @@
     width: 100%;
 }
 .anime-nav ul a{
-    margin-right: 25px;
-    font-size: 12px;
+    margin-right: 20px;
+    font-size: 11px;
     list-style: none;
     text-decoration: none;
     color: #0FFCBE;
